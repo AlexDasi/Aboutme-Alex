@@ -1,0 +1,19 @@
+//-----> $TYPOGRAPHY
+
+h1,h2,h3{
+    color: $dark;
+    font-family: $main-font;
+}
+
+p,a
+{
+    color: $dark;
+    font-family: $secondary-font;
+}
+
+h3{
+    font-size: 1000%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+

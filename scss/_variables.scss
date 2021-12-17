@@ -1,0 +1,16 @@
+//SPACE Variables
+$unit: 10px;
+$space: $unit * 2;
+$space--medium: $space * 1.5;
+$padding: $unit;
+$pagemaxwidth: 1024px;
+
+//COLORS
+$dark: #141414;
+$light: #FBF2E5;
+$accent: #FF3131;
+$gradient: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
+
+//FONTS
+$main-font: 'Rakkas', cursive;
+$secondary-font: 'Ropa Sans', sans-serif;
