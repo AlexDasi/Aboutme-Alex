@@ -1,0 +1,42 @@
+h1{
+    margin-left: -15px;
+}
+
+.name-text{
+    margin-left: 113px;
+    margin-top: 13px;
+    display: block;
+}
+
+.intro-text{
+    width: 45vw;
+    margin-left: 40px;
+    position: absolute;
+    top:350px;
+    align-items: flex-start;
+    z-index: 5;
+}
+
+.textandimg{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+
+.img{
+    left: 148;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.img_top, .img_bottom{
+    position: absolute;
+    width: 65%;
+    height: auto;
+}
+.img_bottom{ 
+    z-index: 2;
+}
+.img_top{
+    z-index: 3;
+}

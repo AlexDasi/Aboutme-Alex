@@ -1,0 +1,95 @@
+h1, h2, h3 {
+  color: #141414;
+  font-family: "Rakkas", cursive;
+}
+
+p, a {
+  color: #141414;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1.4em;
+}
+
+.intro-text {
+  font-size: 16px;
+}
+
+h1 {
+  margin-left: -15px;
+}
+
+.name-text {
+  margin-left: 113px;
+  margin-top: 13px;
+  display: block;
+}
+
+.intro-text {
+  width: 45vw;
+  margin-left: 40px;
+}
+
+.textandimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-text {
+  position: absolute;
+  top: 350px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 5;
+}
+
+.img {
+  left: 148;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.img_top, .img_bottom {
+  position: absolute;
+  width: 65%;
+  height: auto;
+}
+
+.img__bottom {
+  z-index: 2;
+}
+
+.img_top {
+  z-index: 3;
+}
+
+body {
+  background-color: #FBF2E5;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
