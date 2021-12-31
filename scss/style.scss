@@ -1,5 +1,5 @@
-@import "_variables.scss";
-@import "_typography.scss";
-@import "_header.scss";
+@import "utilities/variables";
+@import "utilities/typography";
+@import "layout/header";
 @import "_site.scss";
-@import "_flex.scss";
+@import "layout/flex";

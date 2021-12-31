@@ -6,12 +6,25 @@
 }
 
 .intro-text{
-    width: 170px;
-    margin-left: 40px;
     position: absolute;
+    width: 170px;
+
+    &_:before, &_:after {
+    margin-left: 40px;
+    position: relative;
     top:350px;
     align-items: flex-start;
     z-index: 5;
+    }
+
+    &_:before{
+        background-image: url("http://placekitten.com/200/300");
+        color: $light;
+    }
+    &_:after{
+        background-color: $light;
+        color: $accent;
+    }
 }
 
 .hero{
