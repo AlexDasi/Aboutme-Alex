@@ -1,3 +1,7 @@
+header{
+    flex:1;
+}
+
 .h1-offset{
     position: absolute;
     margin-left: 20vw;
@@ -17,7 +21,7 @@
 .hero{
     position: relative;
     left: 37vw;
-    top: 12vh;
+    top: 7vh;
 
     &_top, &_bottom{
         position: absolute;

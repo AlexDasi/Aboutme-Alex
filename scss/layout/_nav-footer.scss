@@ -1,0 +1,17 @@
+//FLEX
+nav, footer{
+    padding: 20px;
+    height: 30px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: $main-font;
+    position: sticky;
+  }
+
+footer{
+    padding: 20px;
+    height: 10px;
+    align-items: center;
+    position: sticky;
+  }
