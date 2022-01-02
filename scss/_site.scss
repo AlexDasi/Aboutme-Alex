@@ -1,8 +1,13 @@
+html {
+    box-sizing: border-box;
+  }
+
 body{
     background-color: $light;
     min-height: 100vh;
     margin: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 

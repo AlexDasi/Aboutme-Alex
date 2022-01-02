@@ -1,5 +1,8 @@
 header{
     flex:1;
+    height: 500px;
+    flex-basis: auto;
+    flex-wrap: wrap;
 }
 
 .h1-offset{
@@ -11,11 +14,20 @@ header{
 
 .intro-text{
     width: 170px;
-    margin-left: 40px;
+    margin-left: 10vw;
     position: absolute;
     top:350px;
     align-items: flex-start;
     z-index: 5;
+}
+
+.gradient{
+    height: 37px;
+    width: 50vw;
+    background-image: $gradient;
+    z-index: 4;
+    position: relative;
+    top: 35vh;
 }
 
 .hero{
