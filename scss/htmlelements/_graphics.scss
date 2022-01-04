@@ -1,7 +1,28 @@
 
-.line {
+.graph {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 50px;
+    
+    &__1{
+        top: 50px;
+
+        &--line1{
+            width: 80vw;
+            height: 1002px;
+        }
+
+        &--arrow1{
+            position: absolute;
+            left: calc(50% - 40% - 10px);
+            top: 100px;
+        }
+        &--arrow2{
+            position: absolute;
+            left: calc(50% + 40% - 12px);
+            bottom: 0px;
+        }
+    }
 }
+
+

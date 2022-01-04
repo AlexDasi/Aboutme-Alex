@@ -18,7 +18,19 @@ h1 {
   top: 5vh;
 }
 
-.line {
+h2 {
+  font-size: 40px;
+}
+
+section > p {
+  font-size: 28px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.graph {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +38,23 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.graph__1 {
   top: 50px;
+}
+.graph__1--line1 {
+  width: 80vw;
+  height: 1002px;
+}
+.graph__1--arrow1 {
+  position: absolute;
+  left: calc(50% - 40% - 10px);
+  top: 100px;
+}
+.graph__1--arrow2 {
+  position: absolute;
+  left: calc(50% + 40% - 12px);
+  bottom: 0px;
 }
 
 header {
@@ -86,41 +114,74 @@ header {
   z-index: 3;
 }
 
-nav, footer {
-  padding: 20px;
-  max-width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav, .footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  max-width: 100vw;
   font-family: "Rakkas", cursive;
 }
-
-footer {
-  height: 10px;
-  bottom: 0;
+.nav a, .footer a {
+  font-family: "Rakkas", cursive;
+  text-decoration: none;
 }
-
-nav {
-  height: 30px;
-}
-
-.nav, .footer {
-  /*position: -webkit-sticky;  // required for Safari*/
-  position: relative;
+.nav a:hover, .footer a:hover {
+  text-decoration: underline;
 }
 
 .nav {
-  top: 0px;
+  height: 30px;
+  top: 0;
 }
 
 .footer {
-  bottom: 0px;
+  height: 10px;
+  bottom: 0;
+  position: sticky;
+  background-color: #FBF2E5;
+  bottom: 0;
+  left: 0;
+}
+.footer__right {
+  float: left;
+  margin-left: auto;
+}
+
+.section-title {
+  margin-top: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 196px;
+}
+.section-title__1 {
+  background-image: url("/images/graphics/svg/design-icon.svg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*mejor aqui? 
+
+  &, h2{
+
+  }*/
 }
 
 html {

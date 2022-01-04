@@ -17,3 +17,15 @@ h1{
     left: -20px;
     top: 5vh;
 }
+
+h2{
+    font-size: $fontmedium;
+}
+
+section>p{
+    font-size: $fontsection;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 60px;
+}

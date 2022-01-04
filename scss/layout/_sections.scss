@@ -1,0 +1,21 @@
+.section-title{
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 196px;
+
+    &__1{
+        background-image: url('/images/graphics/svg/design-icon.svg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        display: flex;
+        align-items: center;
+
+        /*mejor aqui? 
+        
+        &, h2{
+
+        }*/
+    }
+}
