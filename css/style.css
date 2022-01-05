@@ -1,6 +1,7 @@
 h1, h2, h3 {
   color: #141414;
   font-family: "Rakkas", cursive;
+  font-weight: 400;
 }
 
 p, a {
@@ -12,9 +13,8 @@ p, a {
 h1 {
   font-size: 70px;
   line-height: 1.4em;
-  font-weight: 400;
   position: relative;
-  left: -20px;
+  left: -10px;
   top: 5vh;
 }
 
@@ -23,11 +23,41 @@ h2 {
 }
 
 section > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 294px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 28px;
-  text-align: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 60px;
+}
+
+.section__1 > p {
+  text-align: center;
+}
+
+.section__2 > p {
+  text-align: right;
+}
+
+.section__3 > p {
+  text-align: left;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.line {
+  width: 80vw;
+  height: 1002px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .graph {
@@ -42,18 +72,37 @@ section > p {
 .graph__1 {
   top: 50px;
 }
-.graph__1--line1 {
-  width: 80vw;
-  height: 1002px;
-}
 .graph__1--arrow1 {
-  position: absolute;
   left: calc(50% - 40% - 10px);
   top: 100px;
 }
 .graph__1--arrow2 {
-  position: absolute;
   left: calc(50% + 40% - 12px);
+  bottom: 0px;
+}
+.graph__2 {
+  top: 50px;
+}
+.graph__2--arrow1 {
+  left: calc(50% + 40% - 10px);
+  top: 100px;
+}
+.graph__2--arrow2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 10px;
+}
+.graph__3 {
+  top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.graph__3--arrow1 {
+  top: 100px;
+}
+.graph__3--arrow2 {
   bottom: 0px;
 }
 
@@ -156,14 +205,22 @@ header {
 
 .section-title {
   margin-top: 200px;
+  height: 196px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 196px;
+  /*&__1 &__2 &__3 {
+      align-items: center;
+      justify-content: center;
+
+  }*/
 }
 .section-title__1 {
   background-image: url("/images/graphics/svg/design-icon.svg");
@@ -171,17 +228,44 @@ header {
   /* Center the image */
   background-repeat: no-repeat;
   /* Do not repeat the image */
+}
+.section-title__2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.section-title__2--graphic {
+  z-index: 1;
+  position: relative;
+  left: 45px;
+}
+.section-title__2--h2 {
+  position: relative;
+  z-index: 2;
+  left: -45px;
+  min-width: 180px;
+}
+.section-title__3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*mejor aqui? 
-
-  &, h2{
-
-  }*/
+}
+.section-title__3--graphic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-title__3--h2 {
+  z-index: 2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 html {

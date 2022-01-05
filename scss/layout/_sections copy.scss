@@ -1,17 +1,18 @@
 .section-title{
     margin-top: 200px;
-    height: 196px;
-    //width: 300px;
     position: relative;
     display: flex;
+    height: 196px;
+
+&__1 &__2 &__3 {
     align-items: center;
     justify-content: center;
+}
 
-    /*&__1 &__2 &__3 {
-        align-items: center;
-        justify-content: center;
-        
-    }*/
+&__2 &__3 {
+    display: flex;
+    position: relative;
+}
 
     &__1{
         background-image: url('/images/graphics/svg/design-icon.svg');
@@ -22,36 +23,17 @@
     }
 
     &__2{
-        display: flex;
+        
 
         &--graphic{
             z-index: 1;
-            position: relative;
             left: 45px;
         }
 
         &--h2{
-            position: relative;
             z-index: 2;
             left: -45px;
             min-width: 180px
-        }
-    }
-
-    &__3{
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-        &--graphic{
-           align-items: center;
-        }
-
-        &--h2{
-            z-index: 2;
-            align-self: flex-end;
         }
     }
 
