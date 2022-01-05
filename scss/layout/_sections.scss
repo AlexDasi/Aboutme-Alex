@@ -7,6 +7,9 @@
     align-items: center;
     justify-content: center;
 
+
+    //porque no funciona aqui?
+
     /*&__1 &__2 &__3 {
         align-items: center;
         justify-content: center;
@@ -15,8 +18,8 @@
 
     &__1{
         background-image: url('/images/graphics/svg/design-icon.svg');
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
+        background-position: center;
+        background-repeat: no-repeat;
         //display: flex;
         
     }
