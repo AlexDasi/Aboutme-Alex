@@ -174,7 +174,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  max-width: 100vw;
+  width: 100vw;
   font-family: "Rakkas", cursive;
 }
 .nav a, .footer a {
@@ -191,12 +191,12 @@ header {
 }
 
 .footer {
-  height: 10px;
-  bottom: 0;
-  position: sticky;
-  background-color: #FBF2E5;
-  bottom: 0;
-  left: 0;
+  /* height: 10px; */
+  position: fixed;
+  background-color: #ff0080;
+  top: 0;
+  /* left: 0; */
+  z-index: -1;
 }
 .footer__right {
   float: left;
@@ -207,9 +207,6 @@ header {
   margin-top: 200px;
   height: 196px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -225,9 +222,7 @@ header {
 .section-title__1 {
   background-image: url("/images/graphics/svg/design-icon.svg");
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
 }
 .section-title__2 {
   display: -webkit-box;
@@ -246,9 +241,7 @@ header {
   min-width: 180px;
 }
 .section-title__3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -256,6 +249,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
 }
 .section-title__3--graphic {
   -webkit-box-align: center;
@@ -263,9 +259,15 @@ header {
           align-items: center;
 }
 .section-title__3--h2 {
+  margin: 0px;
   z-index: 2;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {

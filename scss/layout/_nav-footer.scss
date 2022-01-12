@@ -4,7 +4,7 @@
     justify-content: space-between;
     display: flex;
     padding: 20px;
-    max-width: 100vw;
+    width: 100vw;
     font-family: $main-font; 
 
     a{
@@ -23,12 +23,12 @@
 }
 
 .footer{
-    height: 10px;
-    bottom: 0; // required as well.
-    position: sticky;
-    background-color: $light;
-    bottom: 0;
-    left: 0;
+    /* height: 10px; */
+    position: fixed;
+    background-color: rgb(255, 0, 128);
+    top: 0;
+    /* left: 0; */
+    z-index: -1;
 
     &__right{
         float: left;
