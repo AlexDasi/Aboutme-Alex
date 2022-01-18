@@ -1,67 +1,76 @@
-.section-title{
-    margin-top: 200px;
-    height: 196px;
-    //width: 300px;
-    position: relative;
+
+//SECTION VISUALS
+
+//PARAGRAPHS----ALIGNMENT
+section>p{
     //display: flex;
+    width: 294px;
+    font-size: $fontsection;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.section__1>p{
+    text-align: center;
+}
+
+.section__2>p{
+    text-align: right;
+}
+
+.section__3>p{
+    text-align: left;
+}
+
+//TITLES
+.title{
+    margin-top: 100px;
+    height: 132px;
     align-items: center;
     justify-content: center;
-
-
-    //porque no funciona aqui?
-
-    /*&__1 &__2 &__3 {
-        align-items: center;
-        justify-content: center;
-        
-    }*/
 
     &__1{
         background-image: url('/images/graphics/svg/design-icon.svg');
         background-position: center;
         background-repeat: no-repeat;
-        //display: flex;
-        
-    }
-
-    &__2{
         display: flex;
-
-        &--graphic{
-            z-index: 1;
-            position: relative;
-            left: 45px;
-        }
-
-        &--h2{
-            position: relative;
-            z-index: 2;
-            left: -45px;
-            min-width: 180px
-        }
+        height: 196px;
+        
     }
 
-    &__3{
-        
-        //display: flex;
+    &__2, &__3{
         width: 300px;
         flex-direction: column;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
         text-align: right;
+    }
+    
+    &__2{
+        &--graphic{
+            z-index: 1;
+            position: relative;
+            left: -75px;
+        }
+        &--h2{
+            position: relative;
+            z-index: 2;
+            top: -119px;
+            min-width: 180px
+        }
+    }
 
-
+    &__3{
         &--graphic{
            align-items: center;
         }
-
         &--h2{
             margin: 0px;
             z-index: 2;
             align-self: flex-end;
         }
-    }
-
-    
+    }  
 }

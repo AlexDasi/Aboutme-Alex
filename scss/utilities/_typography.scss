@@ -6,9 +6,14 @@ h1,h2,h3{
     font-weight: 400;
 }
 p,a{
-    color: $dark;
     font-family: $secondary-font;
     font-size: $fontsmall;
+}
+a{
+    color: $dark;
+}
+p{
+    color: $text2;
 }
 h1{
     font-size: $fontbig;
@@ -22,24 +27,3 @@ h2{
     font-size: $fontmedium;
 }
 
-section>p{
-    display: flex;
-    width: 294px;
-    justify-content: center;
-    font-size: $fontsection;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 60px;
-}
-
-.section__1>p{
-    text-align: center;
-}
-
-.section__2>p{
-    text-align: right;
-}
-
-.section__3>p{
-    text-align: left;
-}
