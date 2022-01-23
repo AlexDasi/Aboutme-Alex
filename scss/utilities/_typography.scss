@@ -5,11 +5,13 @@ h1,h2,h3{
     font-family: $main-font;
     font-weight: 400;
 }
-p,a{
+p,a
+{
     font-family: $secondary-font;
     font-size: $fontsmall;
 }
 a{
+    font-family: $main-font;
     color: $dark;
 }
 p{

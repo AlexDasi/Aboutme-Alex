@@ -1,3 +1,7 @@
+.content {
+    margin-bottom: 400px;
+}
+
 .line, .arrow, .graph>div {
     justify-content: center;
     display: block;
@@ -8,6 +12,10 @@
 .arrow{
     width: 22px;
     position: relative;
+
+    &-h {
+        bottom: 200px;
+    }
 }
 
 .line{

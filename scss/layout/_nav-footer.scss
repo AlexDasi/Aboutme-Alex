@@ -5,9 +5,14 @@
     display: flex;
     width: 100vw;
     font-family: $main-font; 
+    background-color: $light;
+    z-index: 10;
+;
 
     &__left, &__right {
         padding: 20px;
+        display: flex;
+        align-items: center;
     }
 
     a{
@@ -20,8 +25,8 @@
 }
 
 .nav{
-    height: 30px;
     top: 0;
+    position: fixed;
 }
 
 
@@ -31,7 +36,6 @@
     background-color: rgb(255, 0, 128);
     bottom: 0;
     /* left: 0; */
-    z-index: -1;
 
     &__right{
         float: left;

@@ -17,10 +17,11 @@ body {
         transition: .5s;
       }
       span:first-child {
-        top: 3px; 
+        top: 7px; 
       }
       span:last-child {
-        top: 16px; 
+        top: 12px; 
+        width: 50%;
       }      
     }
     label:hover {
@@ -34,10 +35,13 @@ body {
       span:first-child {
         opacity: 1;
         transform: rotate(405deg);
+        background-color: $accent;
       }
       span:last-child {
         opacity: 1;
         transform: rotate(-405deg);
+        width: 100%;
+        background-color: $accent;
       }
     }
 
@@ -45,12 +49,13 @@ body {
 
       position: fixed;
       top: 0;
-      left: 0;
+      left: -20px;
       width: 100vw;
+      height: $navheight;
       //height: auto;
       z-index: 3;
       transition: .5s;
-      transition-delay: .5s;
+      transition-delay: .2s;
       //overflow: hidden;
       > ul {
         width: 100vw;
@@ -61,7 +66,6 @@ body {
         justify-content: flex-end;
         align-items: center;
         list-style-type: none;
-        right: 10vw;
        
         //top: 20px;
         //left: 20%;
@@ -70,6 +74,11 @@ body {
           opacity: 0;
           transition: .5s;
           transition-delay: 0s;
+          display: flex;
+          align-items: center;
+
+          
+          
           > a {
             text-decoration: none;
             color: $dark;
@@ -78,7 +87,7 @@ body {
             font-size: 14;
             margin: 15px;
             display: block;
-            right: 20px;
+            //right: 20px;
           }
         }
       }
@@ -97,3 +106,4 @@ body {
         display: none;
     }
 }
+

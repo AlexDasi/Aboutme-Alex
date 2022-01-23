@@ -10,6 +10,7 @@ p, a {
 }
 
 a {
+  font-family: "Rakkas", cursive;
   color: #141414;
 }
 
@@ -29,6 +30,10 @@ h2 {
   font-size: 40px;
 }
 
+.content {
+  margin-bottom: 400px;
+}
+
 .line, .arrow, .graph > div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -41,6 +46,9 @@ h2 {
 .arrow {
   width: 22px;
   position: relative;
+}
+.arrow-h {
+  bottom: 200px;
 }
 
 .line {
@@ -154,9 +162,17 @@ header {
   display: flex;
   width: 100vw;
   font-family: "Rakkas", cursive;
+  background-color: #FBF2E5;
+  z-index: 10;
 }
 .nav__left, .nav__right, .footer__left, .footer__right {
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav a, .footer a {
   text-decoration: none;
@@ -166,8 +182,8 @@ header {
 }
 
 .nav {
-  height: 30px;
   top: 0;
+  position: fixed;
 }
 
 .footer {
@@ -176,7 +192,6 @@ header {
   background-color: #ff0080;
   bottom: 0;
   /* left: 0; */
-  z-index: -1;
 }
 .footer__right {
   float: left;
@@ -306,10 +321,11 @@ body input + label span {
   transition: 0.5s;
 }
 body input + label span:first-child {
-  top: 3px;
+  top: 7px;
 }
 body input + label span:last-child {
-  top: 16px;
+  top: 12px;
+  width: 50%;
 }
 body label:hover {
   cursor: pointer;
@@ -322,22 +338,26 @@ body input:checked + label span:first-child {
   opacity: 1;
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
+  background-color: #FF3131;
 }
 body input:checked + label span:last-child {
   opacity: 1;
   -webkit-transform: rotate(-405deg);
           transform: rotate(-405deg);
+  width: 100%;
+  background-color: #FF3131;
 }
 body input ~ nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -20px;
   width: 100vw;
+  height: 70px;
   z-index: 3;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 body input ~ nav > ul {
   width: 100vw;
@@ -354,7 +374,6 @@ body input ~ nav > ul {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  right: 10vw;
 }
 body input ~ nav > ul > li {
   opacity: 0;
@@ -362,6 +381,12 @@ body input ~ nav > ul > li {
   transition: 0.5s;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body input ~ nav > ul > li > a {
   text-decoration: none;
@@ -371,7 +396,6 @@ body input ~ nav > ul > li > a {
   font-size: 14;
   margin: 15px;
   display: block;
-  right: 20px;
 }
 body input:checked ~ nav {
   -webkit-transition-delay: 0s;
@@ -384,4 +408,11 @@ body input:checked ~ nav > ul > li {
 }
 body .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 850px) {
+  .menu-items {
+    font-size: 20;
+    margin: 0 50 0 50;
+  }
 }
