@@ -16,6 +16,7 @@ body {
         background: $dark;
         transition: .5s;
       }
+
       span:first-child {
         top: 7px; 
       }
@@ -26,6 +27,7 @@ body {
     }
     label:hover {
       cursor: pointer;
+
     }
     input:checked + label { 
       span {
@@ -74,11 +76,14 @@ body {
           margin-right: 10px;
             &:last-child {
                 margin-right: 30px;
-            }               
+            }          
+            &:hover{
+              background-color: $accent;
+            }          
           > a {
             text-decoration: none;
             color: $dark;
-            font-weight: $light;
+            //font-weight: $light;
             font-family: $main-font;
             font-size: 14;
             display: block;

@@ -24,7 +24,13 @@
     height: 1002px;
 
 }
-
+.anchor {
+    width: 20px;
+    height: 20px;
+    color: $dark;
+    position: relative;
+    top: -200px;
+}
 .graph {
     
 
@@ -44,6 +50,9 @@
             left: 144px;
             top: -15px;
         
+        }
+        &--anchor{
+            top: -150px;
         }
     }
 

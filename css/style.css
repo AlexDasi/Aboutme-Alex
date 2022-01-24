@@ -53,6 +53,14 @@ h2 {
   height: 1002px;
 }
 
+.anchor {
+  width: 20px;
+  height: 20px;
+  color: #141414;
+  position: relative;
+  top: -200px;
+}
+
 .graph > div {
   width: 300;
 }
@@ -66,6 +74,9 @@ h2 {
 .graph__1--arrow2 {
   left: 144px;
   top: -15px;
+}
+.graph__1--anchor {
+  top: -150px;
 }
 .graph__2 {
   top: 50px;
@@ -410,10 +421,12 @@ body input ~ nav > ul > li {
 body input ~ nav > ul > li:last-child {
   margin-right: 30px;
 }
+body input ~ nav > ul > li:hover {
+  background-color: #FF3131;
+}
 body input ~ nav > ul > li > a {
   text-decoration: none;
   color: #141414;
-  font-weight: #FBF2E5;
   font-family: "Rakkas", cursive;
   font-size: 14;
   display: block;
