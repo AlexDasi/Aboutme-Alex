@@ -19,11 +19,7 @@ p {
 }
 
 h1 {
-  font-size: 70px;
-  line-height: 1.4em;
-  position: relative;
-  left: -10px;
-  top: 5vh;
+  font-size: 72px;
 }
 
 h2 {
@@ -104,8 +100,15 @@ header {
       flex-wrap: wrap;
 }
 
-.h1-offset {
+h1 {
+  line-height: 1.4em;
   position: absolute;
+  left: -10px;
+  top: 5vh;
+}
+
+.h1-offset {
+  position: relative;
   margin-left: 20vw;
   margin-top: -3vh;
   display: block;
@@ -129,13 +132,13 @@ header {
   background-image: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
   z-index: 4;
   position: relative;
-  top: 35vh;
+  top: 500px;
 }
 
 .hero {
-  position: relative;
+  position: absolute;
   left: 37vw;
-  top: 7vh;
+  top: 255px;
 }
 .hero_top, .hero_bottom {
   position: absolute;
@@ -200,7 +203,7 @@ header {
 
 section > p {
   width: 294px;
-  font-size: 28px;
+  font-size: 32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -223,7 +226,7 @@ section > p {
 
 .title {
   margin-top: 100px;
-  height: 132px;
+  height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -231,27 +234,35 @@ section > p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.title__1 {
-  background-image: url("/images/graphics/svg/design-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 196px;
-}
-.title__2, .title__3 {
+.title__1, .title__2, .title__3 {
   width: 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
+}
+.title__1 {
+  margin-bottom: 20px;
+  height: 200px;
+}
+.title__1--graphic {
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.title__1--h2 {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 2;
+  min-width: 180px;
+  top: -154px;
+}
+.title__2 {
+  height: 130px;
 }
 .title__2--graphic {
   z-index: 1;
@@ -263,6 +274,9 @@ section > p {
   z-index: 2;
   top: -119px;
   min-width: 180px;
+}
+.title__3 {
+  height: 130px;
 }
 .title__3--graphic {
   -webkit-box-align: center;
@@ -284,11 +298,14 @@ section > p {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #FBF2E5;
   min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
   margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +320,7 @@ body {
 }
 
 body input + label {
-  position: fixed;
+  position: relative;
   height: 20px;
   width: 15px;
   z-index: 5;
@@ -351,7 +368,7 @@ body input ~ nav {
   position: fixed;
   top: 0;
   left: -20px;
-  width: 100vw;
+  width: auto;
   height: 70px;
   z-index: 3;
   -webkit-transition: 0.5s;
@@ -387,6 +404,10 @@ body input ~ nav > ul > li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10px;
+}
+body input ~ nav > ul > li:last-child {
+  margin-right: 30px;
 }
 body input ~ nav > ul > li > a {
   text-decoration: none;
@@ -394,8 +415,8 @@ body input ~ nav > ul > li > a {
   font-weight: #FBF2E5;
   font-family: "Rakkas", cursive;
   font-size: 14;
-  margin: 15px;
   display: block;
+  width: auto;
 }
 body input:checked ~ nav {
   -webkit-transition-delay: 0s;
@@ -410,9 +431,17 @@ body .hidden {
   display: none;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 768px) {
   .menu-items {
     font-size: 20;
-    margin: 0 50 0 50;
+    margin-right: 50px;
+  }
+
+  p, a {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 144px;
   }
 }
