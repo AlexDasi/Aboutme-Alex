@@ -15,13 +15,13 @@ h1 {
 .h1-offset{
     position: relative;
     margin-left: 20vw;
-    margin-top: -3vh;
+    margin-top: -35px;
     display: block;
 }
 
 .intro-text{
     width: 210px;
-    margin-left: 10vw;
+    margin-left: 15vw;
     position: absolute;
     top:350px;
     align-items: flex-start;
@@ -30,21 +30,22 @@ h1 {
 
 .gradient{
     height: 37px;
-    width: 50vw;
+    width: 317px;
     background-image: $gradient;
     z-index: 4;
     position: relative;
     top: 500px;
 }
 
+
 .hero{
-    position: absolute;
-    left: 37vw;
-    top: 255px;
+    position: relative;
+    margin-left: 50vw;
+    top: 253px;
 
     &_top, &_bottom{
         position: absolute;
-        height: auto;
+
     }
     &_bottom{ 
         z-index: 2;
@@ -54,5 +55,7 @@ h1 {
     &_top{
         z-index: 3;
     }
+    
 }
+
 
