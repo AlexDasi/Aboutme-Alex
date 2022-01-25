@@ -14,7 +14,7 @@
     }
 
     .intro-text {
-        font-size: 24px;
+
     }
 
 
@@ -61,20 +61,16 @@
     }
 
     .intro-text{
+        font-size: 24px;
         width: 320px;
-        top: 475px;
+        top: 440px;
         margin-left: 27vw;
     }
 
     .gradient{
-        top: 710px;
-        height: 37px;
-        width: 400px;
-        margin-left: 27vw;
-        background-image: $gradient;
-        z-index: 4;
-        position: relative;
-        
+        top: 660px;
+        width: 32vw;
+        margin-left: 27vw;     
     }
 
 
