@@ -421,9 +421,6 @@ body input ~ nav > ul > li {
 body input ~ nav > ul > li:last-child {
   margin-right: 30px;
 }
-body input ~ nav > ul > li:hover {
-  background-color: #FF3131;
-}
 body input ~ nav > ul > li > a {
   text-decoration: none;
   color: #141414;
@@ -431,6 +428,10 @@ body input ~ nav > ul > li > a {
   font-size: 14;
   display: block;
   width: auto;
+}
+body input ~ nav > ul > li > a:hover {
+  background-color: #FF3131;
+  color: #FBF2E5;
 }
 body input:checked ~ nav {
   -webkit-transition-delay: 0s;
