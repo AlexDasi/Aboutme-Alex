@@ -7,6 +7,8 @@
     font-family: $main-font; 
     background-color: $light;
     z-index: 10;
+    position: fixed;
+    background-color: $light;
 ;
 
     &__left, &__right {
@@ -19,23 +21,20 @@
         text-decoration: none;
         
         &:hover{
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 }
 
 .nav{
     top: 0;
-    position: fixed;
+    &__left{
+        z-index: 5;
+    }
 }
 
-
 .footer{
-    /* height: 10px; */
-    position: fixed;
-    background-color: $light;
     bottom: 0;
-    /* left: 0; */
 
     &__right{
         float: left;

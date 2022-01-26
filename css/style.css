@@ -14,7 +14,7 @@ a {
   color: #141414;
 }
 
-p {
+p, .reachme {
   color: #88837D;
 }
 
@@ -178,6 +178,8 @@ h1 {
   font-family: "Rakkas", cursive;
   background-color: #FBF2E5;
   z-index: 10;
+  position: fixed;
+  background-color: #FBF2E5;
 }
 .nav__left, .nav__right, .footer__left, .footer__right {
   padding: 20px;
@@ -192,20 +194,18 @@ h1 {
   text-decoration: none;
 }
 .nav a:hover, .footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav {
   top: 0;
-  position: fixed;
+}
+.nav__left {
+  z-index: 5;
 }
 
 .footer {
-  /* height: 10px; */
-  position: fixed;
-  background-color: #FBF2E5;
   bottom: 0;
-  /* left: 0; */
 }
 .footer__right {
   float: left;
@@ -477,9 +477,11 @@ body .hidden {
     z-index: 2;
     left: 53px;
     top: 53px;
+    content: url("../../images/photo red_2x.jpg");
   }
   .hero_top {
     z-index: 3;
+    content: url("../../images/photo 1_2x.jpg");
   }
 
   h1 {
@@ -502,6 +504,11 @@ body .hidden {
     width: 320px;
     top: 440px;
     margin-left: 27vw;
+  }
+
+  .reachme {
+    font-size: 24px;
+    font-family: "Ropa Sans", sans-serif;
   }
 
   .gradient {
