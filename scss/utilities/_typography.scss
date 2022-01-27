@@ -16,7 +16,10 @@ a{
 }
 p, .reachme{
     color: $text2;
+}
 
+.reachme{
+    font-family: $secondary-font;
 }
 h1{
     font-size: $fontbig;

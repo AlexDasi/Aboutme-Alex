@@ -18,6 +18,10 @@ p, .reachme {
   color: #88837D;
 }
 
+.reachme {
+  font-family: "Ropa Sans", sans-serif;
+}
+
 h1 {
   font-size: 72px;
 }
@@ -144,21 +148,25 @@ h1 {
   background-image: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
   z-index: 4;
   position: relative;
-  top: 500px;
+  top: -200px;
 }
 
 .hero {
   position: relative;
   margin-left: 50vw;
   top: 253px;
+  overflow: hidden;
 }
 .hero_top, .hero_bottom {
-  position: absolute;
+  position: relative;
+  display: block;
+  width: 238px;
+  height: 357px;
 }
 .hero_bottom {
   z-index: 2;
   left: 53px;
-  top: 53px;
+  top: -300px;
 }
 .hero_top {
   z-index: 3;
@@ -174,7 +182,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
   font-family: "Rakkas", cursive;
   background-color: #FBF2E5;
   z-index: 10;
@@ -311,12 +319,13 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #FBF2E5;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
   margin: 0px;
   display: -webkit-box;
@@ -379,7 +388,7 @@ body input:checked + label span:last-child {
 body input ~ nav {
   position: fixed;
   top: 0;
-  left: -20px;
+  right: 20px;
   width: auto;
   height: 70px;
   z-index: 3;
@@ -469,19 +478,19 @@ body .hidden {
     top: 198px;
   }
   .hero_top, .hero_bottom {
-    position: absolute;
+    position: relative;
     height: 714px;
     width: 476px;
   }
   .hero_bottom {
     z-index: 2;
     left: 53px;
-    top: 53px;
-    content: url("../../images/photo red_2x.jpg");
+    top: -655px;
+    content: url("../images/me/photomered@x2.jpg");
   }
   .hero_top {
     z-index: 3;
-    content: url("../../images/photo 1_2x.jpg");
+    content: url("../images/me/photome@x2.jpg");
   }
 
   h1 {
@@ -512,7 +521,7 @@ body .hidden {
   }
 
   .gradient {
-    top: 660px;
+    top: -775px;
     width: 32vw;
     margin-left: 27vw;
   }

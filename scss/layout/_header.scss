@@ -35,7 +35,7 @@ h1 {
     background-image: $gradient;
     z-index: 4;
     position: relative;
-    top: 500px;
+    top: -200px;
 }
 
 
@@ -43,15 +43,19 @@ h1 {
     position: relative;
     margin-left: 50vw;
     top: 253px;
+    overflow: hidden;
 
     &_top, &_bottom{
-        position: absolute;
+        position: relative;
+        display: block;
+        width: 238px;
+        height: 357px;
 
     }
     &_bottom{ 
         z-index: 2;
         left: 53px;
-        top: 53px;
+        top: -300px;
     }
     &_top{
         z-index: 3;
